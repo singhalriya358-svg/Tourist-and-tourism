@@ -1,0 +1,344 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderWay | Explore the World</title>
+
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">Wander<span>Way.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <a href="#packages" class="nav-btn">Plan Your Trip ↗️</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+                <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+
+                <h1>Explore the world.<br>
+                    <span>Find yourself.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Discover beautiful destinations, unforgettable experiences
+                    and journeys that become lifelong memories.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#destinations" class="btn btn-primary">
+                        Explore Destinations →
+                    </a>
+                    <a href="#about" class="btn btn-outline">
+                        Discover More
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Destinations</p>
+                    </div>
+                    <div>
+                        <h3>100+</h3>
+                        <p>Travel Packages</p>
+                    </div>
+                    <div>
+                        <h3>4.9/5</h3>
+                        <p>Travel Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section class="section container" id="destinations">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">PLACES WORTH EXPLORING</p>
+                    <h2>Popular Destinations</h2>
+                    <p class="section-description">
+                        From peaceful mountains to tropical beaches,
+                        find the perfect place for your next escape.
+                    </p>
+                </div>
+                <a href="#packages" class="text-link">View Packages ↗️</a>
+            </div>
+            
+<div class="search-box">
+    <input type="text" id="searchInput"
+           placeholder="Search destinations...">
+    <button type="button" id="searchBtn">Search</button>
+</div>
+<p id="noResults" class="no-results">
+    No destinations found. Try another name.
+</p>
+
+            <div class="destination-grid">
+
+                <article class="destination-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=85"
+                        alt="Beautiful Greek island with white buildings">
+                    <div class="card-content">
+                        <span class="tag">BEACH ESCAPE</span>
+                        <h3>Santorini, Greece</h3>
+                        <p>Whitewashed villages and stunning blue waters.</p>
+                        <div class="card-bottom">
+                            <span>🌍 Europe</span>
+                            <a href="#packages">Explore ↗️</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85"
+                        alt="Colorful coastal village in Italy">
+                    <div class="card-content">
+                        <span class="tag">CULTURE & FOOD</span>
+                        <h3>Italy</h3>
+                        <p>Historic streets, delicious food and timeless art.</p>
+                        <div class="card-bottom">
+                            <span>🌍 Europe</span>
+                            <a href="#packages">Explore ↗️</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=85"
+                        alt="Tropical beach with clear blue water">
+                    <div class="card-content">
+                        <span class="tag">TROPICAL GETAWAY</span>
+                        <h3>Bali, Indonesia</h3>
+                        <p>Relaxing beaches, lush greenery and island life.</p>
+                        <div class="card-bottom">
+                            <span>🌍 Asia</span>
+                            <a href="#packages">Explore ↗️</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
+                        alt="Snow-covered mountains in the Alps">
+                    <div class="card-content">
+                        <span class="tag">MOUNTAIN ADVENTURE</span>
+                        <h3>Swiss Alps</h3>
+                        <p>Snowy peaks, scenic trains and mountain views.</p>
+                        <div class="card-bottom">
+                            <span>🌍 Switzerland</span>
+                            <a href="#packages">Explore ↗️</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
+                        alt="Scenic green landscape surrounded by mountains">
+                    <div class="card-content">
+                        <span class="tag">NATURE RETREAT</span>
+                        <h3>Manali, India</h3>
+                        <p>Mountain adventures, fresh air and peaceful valleys.</p>
+                        <div class="card-bottom">
+                            <span>🌍 Himachal Pradesh</span>
+                            <a href="#packages">Explore ↗️</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=85"
+                        alt="Sunlight falling over a beautiful natural landscape">
+                    <div class="card-content">
+                        <span class="tag">SCENIC ESCAPE</span>
+                        <h3>Nature Trails</h3>
+                        <p>Discover hidden gems and reconnect with nature.</p>
+                        <div class="card-bottom">
+                            <span>🌿 Outdoors</span>
+                            <a href="#packages">Explore ↗️</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Travel Packages Section -->
+        <section class="packages-section" id="packages">
+            <div class="container section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">TRAVEL MADE SIMPLE</p>
+                        <h2>Choose Your Adventure</h2>
+                        <p class="section-description">
+                            Carefully planned trips for every kind of traveller.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="package-grid">
+
+                    <article class="package-card">
+                        <div class="package-icon">🏝️</div>
+                        <h3>Beach Holiday</h3>
+                        <p>Relax by the sea and enjoy tropical island experiences.</p>
+                        <ul>
+                            <li>3 nights / 4 days</li>
+                            <li>Hotel stay included</li>
+                            <li>Local sightseeing</li>
+                        </ul>
+                        <div class="package-price">
+                            <span>Starting from</span>
+                            <h3>₹14,999 <small>/ person</small></h3>
+                        </div>
+                        <a href="#contact" class="btn btn-dark">Enquire Now →</a>
+                    </article>
+
+                    <article class="package-card featured">
+                        <span class="popular-label">POPULAR CHOICE</span>
+                        <div class="package-icon">🏔️</div>
+                        <h3>Mountain Escape</h3>
+                        <p>Experience breathtaking views and refreshing mountain air.</p>
+                        <ul>
+                            <li>4 nights / 5 days</li>
+                            <li>Hotel stay included</li>
+                            <li>Adventure activities</li>
+                        </ul>
+                        <div class="package-price">
+                            <span>Starting from</span>
+                            <h3>₹19,999 <small>/ person</small></h3>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">Enquire Now →</a>
+                    </article>
+
+                    <article class="package-card">
+                        <div class="package-icon">🏛️</div>
+                        <h3>Culture & Heritage</h3>
+                        <p>Explore iconic landmarks, local traditions and historic cities.</p>
+                        <ul>
+                            <li>3 nights / 4 days</li>
+                            <li>Guided city tours</li>
+                            <li>Local food experiences</li>
+                        </ul>
+                        <div class="package-price">
+                            <span>Starting from</span>
+                            <h3>₹12,999 <small>/ person</small></h3>
+                        </div>
+                        <a href="#contact" class="btn btn-dark">Enquire Now →</a>
+                    </article>
+
+                </div>
+                <p class="price-note">
+                    * Prices are illustrative and may vary by destination and travel dates.
+                </p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section container about-section" id="about">
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1100&q=85"
+                    alt="Beautiful lake surrounded by mountains">
+                <div class="image-note">
+                    <span>✈️</span>
+                    <div>
+                        <strong>Make every journey count</strong>
+                        <p>Collect moments, not just miles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <p class="eyebrow">THE WANDERWAY EXPERIENCE</p>
+                <h2>Your journey.<br>Our inspiration.</h2>
+                <p>
+                    At WanderWay, we believe travel is more than reaching a
+                    destination. It is about discovering new cultures, meeting
+                    people and creating memories that stay with you forever.
+                </p>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <div>
+                        <h4>Handpicked Destinations</h4>
+                        <p>Explore places selected for memorable experiences.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <div>
+                        <h4>Packages for Every Budget</h4>
+                        <p>Find trip options for different travel styles.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <div>
+                        <h4>Travel Made Easy</h4>
+                        <p>Plan your next adventure from one place.</p>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn btn-primary">Start Exploring →</a>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section" id="contact">
+            <div class="container cta-content">
+                <p class="eyebrow">YOUR NEXT CHAPTER AWAITS</p>
+                <h2>The world is waiting for you.</h2>
+                <p>Have a destination in mind? Start planning your next adventure today.</p>
+                <a href="mailto:travel@example.com?subject=Travel%20Package%20Enquiry"
+                   class="btn btn-light">Send an Enquiry ↗️</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#home" class="logo">Wander<span>Way.</span></a>
+            <p>Discover more. Travel better. Live fully.</p>
+            <p class="copyright">
+                © 2026 WanderWay. Created for the Web Development MSE project.
+            </p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
